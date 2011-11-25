@@ -21,7 +21,7 @@ YUI.add('gallery-recordset-multisort', function(Y) {
     }
 
     Y.mix(RecordsetMultisort, {
-        NS: "sort",
+        NS: "multisort",
 
         NAME: "recordsetMultisort",
 

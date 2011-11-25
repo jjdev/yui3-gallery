@@ -19,7 +19,7 @@
     }
 
     Y.mix(RecordsetMultisort, {
-        NS: "sort",
+        NS: "multisort",
 
         NAME: "recordsetMultisort",
 
