@@ -1,0 +1,1 @@
+YUI.add("lang/gallery-datatable-multisort_en",function(a){a.Intl.add("gallery-datatable-multisort","en",{asc:"Ascending",desc:"Descending",sortBy:"Sort by {column}",reverseSortBy:"Reverse sort by {column}"});},"@VERSION@");
