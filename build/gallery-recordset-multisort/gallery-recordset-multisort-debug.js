@@ -13,17 +13,17 @@ YUI.add('gallery-recordset-multisort', function(Y) {
 
     /**
     * Plugin that adds default and custom multi field sorting functionality to the Recordset utility
-    * @class RecordsetMultisort
+    * @class RecordsetMultiSort
     */
 
-    function RecordsetMultisort(fields, sorter) {
-        RecordsetMultisort.superclass.constructor.apply(this, arguments);
+    function RecordsetMultiSort(fields, sorter) {
+        RecordsetMultiSort.superclass.constructor.apply(this, arguments);
     }
 
-    Y.mix(RecordsetMultisort, {
+    Y.mix(RecordsetMultiSort, {
         NS: "multisort",
 
-        NAME: "recordsetMultisort",
+        NAME: "recordsetMultiSort",
 
         ATTRS: {
 
@@ -75,7 +75,7 @@ YUI.add('gallery-recordset-multisort', function(Y) {
         }
     });
 
-    Y.extend(RecordsetMultisort, Y.Plugin.Base, {
+    Y.extend(RecordsetMultiSort, Y.Plugin.Base, {
 
         /**
         * @description Sets up the default function to use when the "sort" event is fired.
@@ -138,8 +138,7 @@ YUI.add('gallery-recordset-multisort', function(Y) {
         * @description Sorts the recordset.
         *
         * @method sort
-        * @param field {string} A key to sort by.
-        * @param desc {boolean} True if you want sort order to be descending, false if you want sort order to be ascending
+        * @param fields {array} of object {field, desc}.
         * @public
         */
         sort: function (fields, sorter) {
@@ -195,7 +194,7 @@ YUI.add('gallery-recordset-multisort', function(Y) {
         }
     });
 
-    Y.namespace("Plugin").RecordsetMultisort = RecordsetMultisort;
+    Y.namespace("Plugin").RecordsetMultiSort = RecordsetMultiSort;
 
 
 
